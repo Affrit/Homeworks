@@ -1,0 +1,75 @@
+.cards-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #0d5825;
+    height: 500px;
+}
+
+.blockquote {
+    margin: 0;
+    @include centered_text(25px, $white);
+
+    &__text {
+        margin: 0;
+        font-weight: 700;
+    }
+
+    &__text:before {
+        content: "\201c";
+    }
+
+    &__text:after {
+        content: "\201d";
+    }
+
+    &__autor {
+        @include centered_text(25px, $white);
+    }
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 50px;
+    position: relative;
+
+    &__img {
+        width: 150px;
+        position: absolute;
+        transition: bottom 0.4s;
+    }
+
+    &__img:nth-child(1) {
+        transform: rotate(-25deg);
+        left: calc(50% - 130px);
+        bottom: 25px;
+
+        &:hover {
+            cursor: pointer;
+            bottom: 50px;
+        }
+    }
+
+    &__img:nth-child(2) {
+        transform: rotate(-10deg);
+        bottom: 20px;
+
+        &:hover {
+            cursor: pointer;
+            bottom: 45px;
+        }
+    }
+
+    &__img:nth-child(3) {
+        transform: rotate(10deg);
+        left: calc(50% - 20px);
+        bottom: 0;
+
+        &:hover {
+            cursor: pointer;
+            bottom: 25px;
+        }
+    }
+}

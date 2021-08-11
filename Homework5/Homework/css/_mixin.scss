@@ -1,0 +1,17 @@
+@mixin circle($size) {
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+}
+
+@mixin centered_text($size, $color) {
+    color: $color;
+    font-size: $size;
+    text-align: center;
+}
+
+@mixin sqare($size, $color) {
+    width: $size;
+    height: $size;
+    background: $color;
+}

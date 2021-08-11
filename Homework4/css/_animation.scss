@@ -1,0 +1,20 @@
+.animation {
+    margin-top: 20px;
+    height: 400px;
+    width: 400px;
+    position: relative;
+
+    &__square {
+        @include sqare(100px, $red);
+        position: absolute;
+        animation: mowing 3s infinite; 
+    }
+}
+
+@keyframes mowing{
+    0%  { top: 0; left: 0;}
+    25%  { top: 300px; left: 0; background: $blue;}
+    50%  { top: 300px; left: 300px; background: $green;}
+    75%  { top: 0; left: 300px; background: $yellow;}
+    100% { top: 0; left: 0;}
+  }

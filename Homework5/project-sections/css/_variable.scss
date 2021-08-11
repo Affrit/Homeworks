@@ -1,0 +1,18 @@
+$black: #000;
+$white: #fff;
+$pink: #f0f;
+$blue: #00f;
+$grey: #ccc;
+$base_font: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$font: 'Roboto', $base_font;
+$base_radius: 10px;
+
+// buttons style
+$border_width: 1px;
+$border_style: solid;
+$border_color: $blue;
+$button_color: $pink;
+$button_bg: $grey;
+$button_radius: $base_radius/2;
+$button_hover_bg: $button_color;
+$button_hover_color: $border_color;

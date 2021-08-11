@@ -1,0 +1,146 @@
+.element {
+    width: 350px;
+    height: 220px;
+    padding: 15px 10px 20px 10px;
+    margin: 30px;
+    border: 2px dashed red;
+    background: green;
+}
+
+.block {
+    width: 50%;
+    margin: 30px;
+}
+
+.block__img {
+    margin-right: 20px;
+    float: left;
+}
+
+.block__inner-img {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 200px;
+    height: auto;
+    float: right;
+}
+
+.block__text {
+    text-align: justify;
+}
+
+/*=====additionally=======*/
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.wrapper .card:nth-child(1) {
+    padding-left: 10%;
+    width: 35%;
+    background: #404040;
+}
+
+.wrapper .card:nth-child(2) {
+    width: 30%;
+    background: #f74c55;
+}
+
+.wrapper .card:nth-child(3) {
+    padding-right: 10%;
+    width: 35%;
+    background: #2d5f3b;
+}
+
+.card {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card__title {
+    margin: 0;
+    font-weight: 400;
+    position: relative;
+}
+
+.card__title:before {
+    font-size: 30px;
+    font-family: FontAwesome;
+    color: #fff;
+}
+
+.card:nth-child(1) .card__title:before {
+    content: "\f201";
+    margin-right: 10px;
+}
+
+.card:nth-child(2) .card__title:before {
+    content: "\f3fa";
+    margin-right: 20px;
+}
+
+.card:nth-child(2) .card__title:after {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform: rotate(90deg);
+    content: "\f3fa";
+    font-size: 30px;
+    font-family: FontAwesome;
+    color: #fff;
+    background: #f74c55;
+    margin-right: 10px;
+}
+
+.card:nth-child(3) .card__title:before {
+    content: "\f382";
+    margin-right: 10px;
+}
+
+.card__button {
+    align-self: flex-end;
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+
+.card:nth-child(1) .card__button {
+    background: #272727;
+}
+
+.card:nth-child(2) .card__button {
+    background: #c53840;
+}
+
+.card:nth-child(3) .card__button {
+    background: #1c3d25;
+}
+
+.card__button:before {
+    content: "";
+    background: #fff;
+    height: 25px;
+    width: 5px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.card__button:after {
+    content: "";
+    height: 5px;
+    width: 25px;
+    background: #fff;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}

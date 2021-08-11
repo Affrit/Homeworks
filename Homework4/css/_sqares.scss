@@ -1,0 +1,29 @@
+.squares {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+
+    &__square {
+        @include sqare(100px, $blue);
+        position: relative;
+    }
+
+    &__square:before {
+        content: '';
+        @include sqare(100px, $coral);
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        z-index: -1;
+    }
+
+    &__square:after {
+        content: '';
+        @include sqare(100px, $light_green);
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        z-index: -1;
+    }
+}

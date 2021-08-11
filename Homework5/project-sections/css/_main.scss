@@ -1,0 +1,124 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3);
+    padding: 15px;
+
+    &__visual {
+        position: relative;
+    
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0);
+            transition: all 1s;
+        }
+    }
+
+    &__img {
+        vertical-align: top;
+        width: 100%;
+        height: auto;
+    }
+
+    &__body {
+        flex-grow: 1;
+        background: #f8f8f6;
+        padding: 30px;
+        position: relative;
+        transition: all 1s;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            bottom: 100%;
+            border-style: solid;
+            border-width: 0 20px 10px 20px;
+            border-color: transparent transparent #f8f8f6 transparent;
+            transition: all 1s;
+        }
+    }
+
+    &__title {
+        color: #c7b299;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        margin: 0;
+        color: #d1d1d1;
+    }
+}
+
+.card:hover {
+
+    .card__title {
+        color: #ffffff;
+    }
+
+    .card__text {
+        color: #c7b299;
+    }
+
+    .card__body {
+        background: #362f2d;
+
+        &:before {
+            border-color: transparent transparent #362f2d transparent;
+        }
+    }
+
+    .card__visual:before {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .card__link {
+        &:before {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+.card__link:nth-child(2) {
+    &:before {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: calc(50% - 25px / 2);
+        left: calc(50% - 37px);
+        content: "\f0c1";
+        font-size: 25px;
+        font-family: FontAwesome;
+        color: #c7b299;
+        transition: all 1s;
+    }
+}
+
+.card__link:nth-child(3) {
+    &:before {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: calc(50% - 25px / 2);
+        left: calc(50% + 25px);
+        content: "\f002";
+        font-size: 25px;
+        font-family: FontAwesome;
+        color: #ffffff;
+        transition: all 1s;
+    }
+}

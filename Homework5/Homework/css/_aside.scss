@@ -1,0 +1,17 @@
+aside {
+    width: 210px;
+    flex-shrink: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    &:nth-child(2) {
+        background-color: #c798b9;
+        order: -1;
+    }
+
+    &:nth-child(3) {
+        background-color: #9cb1c7;
+    }
+}

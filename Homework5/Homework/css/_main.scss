@@ -1,0 +1,37 @@
+[id="main"] {
+    display: flex;
+    flex-grow: 1;
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 -10px;
+
+    &__text {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background: #695275;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: #af52e0;
+        transform: scale(1.2);
+    }
+}

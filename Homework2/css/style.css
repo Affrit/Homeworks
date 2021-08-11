@@ -1,0 +1,43 @@
+figure {
+    background-color: red;
+}
+
+[href*="https"] {
+    color: red;
+}
+
+.holder h1 + ul > li:last-child a {
+    background: green;
+}
+
+.holder ul + p {
+    font-size: 26px;
+}
+
+.text-box h3:first-child {
+    color: pink;
+}
+
+[id='greycol'] {
+    color: grey;
+}
+
+.text-box div p {
+    color: red;
+}
+
+.text-box p:nth-child(7){
+    color: green;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.bg-box {
+    height: 500px;
+    width: 800px;
+    background: url(../img/lamp-png-0.png) repeat-x, url(../img/grass-png-images-pictures-transparent-28.png) repeat-x, url(../img/Ёжик.png) repeat-y, url(../img/58eb07b830eab15b56162788.png) repeat-y, url(../img/pole-zelen-trava-dom-derevya.jpg) no-repeat, green;
+    background-size: 30px auto, 200px auto, 30px auto, 30px auto, 400px auto;
+    background-position: 0 0, bottom, left, 770px, center;
+}

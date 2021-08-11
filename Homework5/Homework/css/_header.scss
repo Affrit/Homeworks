@@ -1,0 +1,33 @@
+[id="header"] {
+    background-color: $dark_yellow;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__img {
+    width: 150px;
+    height: auto;
+    vertical-align: top;
+}
+
+.menu {
+    @extend %listreset;
+    display: flex;
+    font-size: 20px;
+
+    &__item {
+        padding: 10px;
+    }
+
+    &__btn {
+        color: $black;
+        text-decoration: none;
+        transition: all 0.3s;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
